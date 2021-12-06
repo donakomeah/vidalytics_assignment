@@ -1,21 +1,24 @@
-The 'Basket' class is for imitating shopping cart as indicated in the task. This class Implements a number of interfaces. The Product, Offers and DeliveryRule interfaces.
+The **'Basket'** class is for imitating shopping cart as indicated in the task. This class Implements a number of interfaces. The Product, Offers and DeliveryRule interfaces.
 Upon initialization of the Object the class accepts an array of product codes which are eligible for special offer as the first parameter. 
 It is assumed that multiple items could be selected for a special offer. The constructor also 
 takes an array of the delivery rules as well as the product catalogue which is an array of ProductItem class.
 
-Product Interface
+### Product Interface
+
 There is a addProduct method to add product items which updates the bag array. The bag array contains products selected for purchase. Add Product method accepts product code as parameter.
 The add product method checks if item is eligible for special offer and amends the product price if eligible. It access the Product Item object as a parameter.
 This interface also has the getProduct method for retrieving a object of ProductItem class from the product catalogue by passing product code as parameter.
 Product interface also has the loadProductCatalogue method with loads an array of ProductItem to populate the product catalogue property in the Basket class. 
 The product catalogue contains information about all products available on sale.
  
-Offers Interface
+### Offers Interface
+
 This interface has 3 methods. The first being isEligible method to check if a particular product is eligible for special offer. 
 The addSpecialOfferProduct can also be used for adding products on special offer, whiles removeSpecialOfferProduct method is used 
 for removing products on speical offer.
 
-DeliveryRules Interface
+### DeliveryRules Interface
+
 This interface has 3 methods. The getDeliveryCost method is used to estimate total cost of delivery based on value of the total cost of items in the basket.
 The getZeroDeliveryCost method is used to get total cost value based on delivery rules. It is assumed if the total value of items purchased is higher than the highest value 
 defined in the delivery rule. This is selected as the value for zero delivery cost. A default value is assigned if no delivery rule is available.
@@ -29,13 +32,13 @@ countProducts method is used to count number of occurrences of a particular prod
 getTotalCostPrice method to calculate cost price of all items in the bag.
 getTotal method is the sum of getTotalCostPrice and getgetDeliveryCost method
 
-ProductItem 
+#### ProductItem 
 ProductItem class defines all properties about a product. The property values are set upon initialization.
 
-DeliveryCostBand
+#### DeliveryCostBand
 DeliveryCostBand class defines all properts related to delivery rules. The property values are set upon initialization.
 
-Sample code to implement the Basket class. You create a product Item and add the Object by invoking the add Product method of the Basket class.
+**Sample code to implement the Basket class. You create a product Item and add the Object by invoking the add Product method of the Basket class.
 
 //Class Implementation
 
