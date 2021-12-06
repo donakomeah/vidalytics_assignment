@@ -42,6 +42,8 @@ DeliveryCostBand class defines all properts related to delivery rules. The prope
 **Sample code to implement the Basket class. You create a product Item and add the Object by invoking the add Product method of the Basket class.
 
 <pre>
+<?php
+header('Content-type: text/plain');
 //Class Implementation
 
 $p = new ProductItem('R01','RED WIDGET',32.95);
@@ -72,9 +74,9 @@ echo $b->getTotalCostPrice()."<br />";
 $b->addSpecialOfferProduct('B01');
 
 
-echo 'Items Cost is: '.$b->getTotalCostPrice()."<br />";
-echo 'Delivery Cost is: '.$b->getDeliveryCost()."<br />";
-echo 'Total Price + Delivery Cost is: '.$b->getTotal()."<br />";
+echo 'Items Cost is: '.$b->getTotalCostPrice()."\n";
+echo 'Delivery Cost is: '.$b->getDeliveryCost()."\n";
+echo 'Total Price + Delivery Cost is: '.$b->getTotal()."\n";
 
 //Remove product R01 from array on products on special offer
 $b->removeSpecialOfferProduct('R01');
