@@ -2,8 +2,8 @@
 
 interface Product
 {
-	 public function addProduct($product_code):void;
-	 public function getProduct($product_code):ProductItem;
+	 public function addProduct(string $product_code):void;
+	 public function getProduct(string $product_code):ProductItem;
 	 public function loadProductCatalogue(array $product_catalog):void;
 }
 
@@ -16,9 +16,9 @@ interface DeliveryRule
 
 interface Offers
 {
-	public function isEligibleForOffer($product_code):bool;
-	public function addSpecialOfferProduct($product_code):void;
-	public function removeSpecialOfferProduct($product_code):void;
+	public function isEligibleForOffer(string $product_code):bool;
+	public function addSpecialOfferProduct(string $product_code):void;
+	public function removeSpecialOfferProduct(string $product_code):void;
 }
 
 //Class to map total cost of items with its associated delivery cost
