@@ -42,8 +42,6 @@ DeliveryCostBand class defines all properts related to delivery rules. The prope
 **Sample code to implement the Basket class. You create a product Item and add the Object by invoking the add Product method of the Basket class.**
 
 <pre>
-<?php
-header('Content-type: text/plain');
 //Class Implementation
 
 $p = new ProductItem('R01','RED WIDGET',32.95);
