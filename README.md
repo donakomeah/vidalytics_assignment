@@ -39,7 +39,7 @@ ProductItem class defines all properties about a product. The property values ar
 #### DeliveryCostBand
 DeliveryCostBand class defines all properts related to delivery rules. The property values are set upon initialization.
 
-**Sample code to implement the Basket class. You create a product Item and add the Object by invoking the add Product method of the Basket class.
+**Sample code to implement the Basket class. You create a product Item and add the Object by invoking the add Product method of the Basket class.**
 
 <pre>
 <?php
