@@ -1,3 +1,4 @@
+### Basket Class
 The **'Basket'** class is for imitating shopping cart as indicated in the task. This class Implements a number of interfaces. The Product, Offers and DeliveryRule interfaces.
 Upon initialization of the Object the class accepts an array of product codes which are eligible for special offer as the first parameter. 
 It is assumed that multiple items could be selected for a special offer. The constructor also 
@@ -40,6 +41,7 @@ DeliveryCostBand class defines all properts related to delivery rules. The prope
 
 **Sample code to implement the Basket class. You create a product Item and add the Object by invoking the add Product method of the Basket class.
 
+<pre>
 //Class Implementation
 
 $p = new ProductItem('R01','RED WIDGET',32.95);
@@ -77,3 +79,4 @@ echo 'Total Price + Delivery Cost is: '.$b->getTotal()."<br />";
 //Remove product R01 from array on products on special offer
 $b->removeSpecialOfferProduct('R01');
 var_dump($b->special_offer_eligible_codes);
+</pre>
